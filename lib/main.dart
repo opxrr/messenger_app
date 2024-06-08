@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:messenger_app/UI/chat_screen.dart';
-import 'package:messenger_app/UI/inChat_screen.dart';
+import 'package:messenger_app/UI/in_chat_screen.dart';
 import 'package:messenger_app/UI/login_screen.dart';
 import 'UI/splash_screen.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         ChatScreen.routeName: (_) => const ChatScreen(),
         LoginScreen.routeName: (_) => const LoginScreen(),
-        InChatScreen.routeName: (_) => const InChatScreen(),
+        InChatScreen.routeName: (_) => const InChatScreen(chatterName: '',),
       },
       //initialRoute: SplashScreen.routeName,
     );

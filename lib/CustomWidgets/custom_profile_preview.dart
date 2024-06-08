@@ -32,15 +32,20 @@ class ProfilePreview extends StatelessWidget {
             ],
           ),
           isOnline == true
-              ? const Text(
-                  'Alo',
-                  style: TextStyle(color: Colors.black38),
+              ? const Expanded(
+                  child: Text(
+                    'Alo',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(color: Colors.black38),
+                  ),
                 )
-              : const Text(
-                  'Your Story',
-                  style: TextStyle(color: Colors.black38),
+              : const Expanded(
+                  child: Text(
+                    'Your Story',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(color: Colors.black38),
+                  ),
                 ),
-
         ],
       ),
     );

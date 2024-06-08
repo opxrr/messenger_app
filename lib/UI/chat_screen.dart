@@ -17,7 +17,7 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: const EdgeInsets.only(left: 20,right: 20,top: 50),
+        padding: const EdgeInsets.only(left: 20, right: 20, top: 50),
         child: Column(
           children: [
             Row(
@@ -173,15 +173,21 @@ class _ChatScreenState extends State<ChatScreen> {
             ButtonBar(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.message_outlined,size: 40),
-                SizedBox(
-                  width: 20,
+                IconButton(
+                  icon: Image.asset('assets/images/messages_tab.png'),
+                  onPressed: () {},
                 ),
-                Icon(Icons.people_outline,size: 40,),
-                SizedBox(
-                  width: 20,
+                IconButton(
+                  icon: Image.asset('assets/images/people_tab.png'),
+                  onPressed: () {},
                 ),
-                Icon(Icons.amp_stories_outlined,size: 40),
+                // SizedBox(
+                //   width: 20,
+                // ),
+                IconButton(
+                  icon: Image.asset('assets/images/stories_tab.png'),
+                  onPressed: () {},
+                ),
               ],
             )
           ],
